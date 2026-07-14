@@ -1,8 +1,8 @@
 import { test } from '@playwright/test';
 // Traemos nuestras cajas de Legos
-import { LoginPage } from '../node_modules/POM/Login';
-import { InventoryPage } from '../node_modules/POM/InventoryPage';
-import { CheckoutPage } from '../node_modules/POM/Checkout';
+import { LoginPage } from './POM/Login';
+import { InventoryPage } from './POM/InventoryPage';
+import { CheckoutPage } from './POM/Checkout';
 
 test('Mi primera prueba usando POM', async ({ page }) => {
   // 1. Sacamos los objetos de las cajas

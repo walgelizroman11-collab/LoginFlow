@@ -27,5 +27,10 @@ test('Mi primera prueba usando POM', async ({ page }) => {
   // -- Finalizar y Verificar --
   await checkoutPage.finalizarCompra();
   await checkoutPage.verificarCompraExitosa();
+
+  const video = page.video();
+  if (video) {
+    const path = await video.path();
+    console.log(`El video se está guardando en: ${path}`);}
 });
 

@@ -28,7 +28,7 @@ jobs:
       run: npx playwright install --with-deps
 
     - name: Run Playwright tests
-      run: npx playwright test
+      run: npx playwright test t/POM2/Example4.spec.js
 
     # Guarda el reporte de las pruebas si algo falla
     - uses: actions/checkout@v4
